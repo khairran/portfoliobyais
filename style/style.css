@@ -1,0 +1,173 @@
+@font-face {
+  font-family: ;
+  src: url();
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.wel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 15vh;
+  
+  width: ;
+}
+
+.com{
+box-sizing: border-box;
+border: solid 1vh rgb(20, 124, 135);
+
+  overflow: hidden;
+  /* border-right: 0.15em solid rgb(20, 124, 135); */
+  /* white-space: nowrap; */
+  margin: 0 auto; 
+  letter-spacing: 0.1em;
+  animation: typing 2.5s steps(200, end), blink-caret 2s step-end;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  1% {
+    border-color: rgb(20, 124, 135);
+  }
+}
+
+
+
+
+@keyframes bounce {
+  from {
+    transform: translateY(1);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+.icon {
+  /* up */
+  color: aquamarine;
+  animation: bounce 0.35s ease infinite alternate;
+  margin: 5%;
+  /* padding: 10%; */
+  
+}
+.icon1 {
+  /* down */
+  color: red;
+  animation: bounce 0.35s ease infinite alternate;
+  margin: 5%;
+  border-radius: 25% 10% white;
+  z-index: 99;
+}
+
+.on {
+  display: none;
+}
+.off {
+  display: none;
+}
+
+.up {
+  display: none;
+}
+
+.down {
+  display: block;
+}
+
+.on:checked ~ .down {
+  display: none;
+}
+
+.on:checked ~ .up {
+  display: block;
+}
+
+.off:checked ~ ul.navigation {
+  display: block;
+}
+
+.on:checked ~ ul.navigation {
+  display: block;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  
+
+}
+.navigation {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: black;
+  border: solid 1vh blue;
+box-sizing: border-box;
+  
+}
+
+
+li {
+  /* background-color: gray; */
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+  padding: 5%;
+  border-radius: 8% 8%;
+  border: 0.2rem;
+}
+
+.project {  
+  border: solid 1vh red;
+  height: 100%;
+  /* padding: 20%; */
+}
+
+.lorem {
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+}
+
+.photo {
+  
+  border-radius: 50%;
+}
+
+.citation {
+  padding:7%
+}
+
+main {
+  margin-top: 30%;
+  height: 100%;
+}
